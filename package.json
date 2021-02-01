@@ -1,0 +1,40 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./endpoint/index.js",
+  "scripts": {
+    "start": "node",
+    "test": "NODE_ENV=test jest",
+    "test:watch": "NODE_ENV=test jest --watchAll",
+    "coverage": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/heisser-jimenez/code-sandbox.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/heisser-jimenez/code-sandbox/issues"
+  },
+  "homepage": "https://github.com/heisser-jimenez/code-sandbox#readme",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "express": "^4.17.1",
+    "node-fetch": "^2.6.1",
+    "nodemon": "^2.0.2"
+  },
+  "jest": {
+    "modulePaths": [
+      "<rootDir>/src"
+    ],
+    "verbose": false,
+    "testEnvironment": "node"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "jest": "^26.4.1",
+    "sinon": "^9.0.3"
+  }
+}
